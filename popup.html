@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Etsy Bot 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title-bar">
+      <h2>Etsy Bot 3</h2>
+      <span class="gear-icon" title="Toggle API Settings">⚙</span>
+    </div>
+    <div class="api-settings" style="display: none;">
+      <label for="apiKey">OpenRouter API Key:</label>
+      <input type="text" id="apiKey" placeholder="Enter your OpenRouter API key">
+      <button id="saveApiKeyBtn">Save API Key</button>
+      <p id="status"></p>
+    </div>
+    <button id="fetchMessageBtn">Fetch Latest Message</button>
+    <p id="latestMessage"></p>
+    <div id="responseList"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+.ai-response-btn {
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #F1641E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ai-response-btn:hover {
+  background-color: #d85617;
+}
+
+.container {
+  padding: 20px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #F1641E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+button:hover {
+  background-color: #d85617;
+}
+
+#fetchMessageBtn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#status, #latestMessage {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#latestMessage {
+  font-size: 21px;
+  color: #222222;
+  width:83%;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#responseList {
+  margin-bottom: 20px;
+}
+
+.response-item {
+  margin: 10px 0;
+}
+
+.response-container {
+  position: relative;
+  padding: 8px;
+}
+
+.response-text {
+  margin: 0;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  background: transparent;
+}
+
+.copy-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+.response-container:hover .copy-overlay {
+  display: block;
+}
+
+.response-container:hover .response-text {
+  background: #eeeeee;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.exact-match-tag {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title-bar h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.gear-icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  line-height: 1;
+}
+
+.gear-icon:hover {
+  color: #F1641E;
+}
+
+.api-settings {
+  margin-bottom: 10px;
+}

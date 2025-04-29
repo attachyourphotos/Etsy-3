@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Etsy AI Message Responder",
+  "version": "1.0",
+  "description": "Fetches latest Etsy message and generates AI responses.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.etsy.com/*",
+    "https://openrouter.ai/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://openrouter.ai"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.etsy.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
