@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Etsy Bot 3</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Etsy Sale Automator</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="title-bar">
-      <h2>Etsy Bot 3</h2>
-      <span class="gear-icon" title="Toggle API Settings">⚙</span>
-    </div>
-    <div class="api-settings" style="display: none;">
-      <label for="apiKey">OpenRouter API Key:</label>
-      <input type="text" id="apiKey" placeholder="Enter your OpenRouter API key">
-      <button id="saveApiKeyBtn">Save API Key</button>
-      <p id="status"></p>
-    </div>
-    <button id="fetchMessageBtn">Fetch Latest Message</button>
-    <p id="latestMessage"></p>
-    <div id="responseList"></div>
-  </div>
+  <h3>Etsy Daily Sale Automator</h3>
+  <button id="triggerButton">Run Sale Now</button>
+  <p id="status">Click to set up today's sale</p>
   <script src="popup.js"></script>
 </body>
 </html>
